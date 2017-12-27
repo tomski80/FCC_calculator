@@ -96,7 +96,7 @@ $( function(){
             let number = 0;
             if(this.number.length){
                 number = +this.number.join('');
-            }
+            
                 
             if(this.result.length){
 
@@ -120,6 +120,7 @@ $( function(){
             }else{
                 this.result.push(number);
             }
+        }
             this.display = this.result[0];
             this.number = [];
             this.updateDisplay();
