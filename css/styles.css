@@ -1,0 +1,18 @@
+body {
+    background-color: aquamarine;
+}
+
+.calc {
+    width: 200px;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    padding: 50px 15px 15px;
+    text-align: center;
+}
+
+.keyboard {
+    width: 200px;
+    padding: 0;
+    margin:  15px;
+    text-align: left;
+}

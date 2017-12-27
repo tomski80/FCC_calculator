@@ -20,8 +20,8 @@ $( function (){
             this.numberEntered = true;
             let digit = $(btn).val();
             this.number.push(digit);
-            this.number.length ? this.number.join('') : this.number.push('0');
-            this.display = +this.number;
+            //this.number.length ? this.display = this.number.join('') : this.number.push('0');
+            this.display = this.number.join('');
             this.updateDisplay();
         },
 
@@ -55,12 +55,16 @@ $( function (){
         },
 
         percentage: function(){
-
-            // need to decide how to do this !? 
             let last = this.operationChain.length - 1;
             if(['*','/','+','-','='].includes(this.operationChain[last])){
                 this.operationChain.pop();  //remove operation 
             }
+            //calculate percentage of result and replace in chain operation.
+            let percentage = this.operationChain.pop();
+            this.eval();
+            let result = this.result;
+            let percentValue = (result * percentage)/100;
+            this.operationChain.push(percentValue);
         },
 
         changeSign: function(){
