@@ -1,18 +1,77 @@
 body {
-    background-color: aquamarine;
+    background-color: rgb(116, 116, 116);
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
 }
 
-.calc {
-    width: 200px;
-    background-color: antiquewhite;
-    margin: 0 auto;
-    padding: 50px 15px 15px;
-    text-align: center;
+.title {
+    padding: 0;
+    margin: 0;
+    line-height: 0;
 }
+.calc {
+    color: rgb(66, 66, 66);
+    width: 180px;
+    background-color: rgb(206, 206, 206);
+    margin: 5% auto;
+    padding: 15px 15px 15px;
+    text-align: center;
+    border: none;
+    border-radius: 10px 10px 50% 50% / 5px 5px 20px 20px ; 
+    box-shadow: inset 5px 5px 10px white, inset -5px -5px 10px rgb(94, 94, 94),0px 0px 5px 2px rgba(59, 59, 59, 0.671), 10px 10px 20px rgb(70, 70, 70);
+    background: linear-gradient(180deg, rgb(209, 209, 209), rgb(167, 167, 167));
+}
+
 
 .keyboard {
     width: 200px;
     padding: 0;
-    margin:  15px;
+    margin:  35px 5px 15px;
     text-align: left;
 }
+
+.display {
+    font-family: 'VT323', monospace;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: right;
+    padding: 0px 10px;
+    height: 40px;
+    width: 150px;
+    margin: 20px 0 0 0 ;
+    box-shadow: 2px 5px 3px 3px rgba(255, 255, 255, 0.747),  0px -5px 3px 3px rgba(0, 0, 0, 0.219);
+    border-radius: 4px;
+    border: 2px solid rgba(5, 5, 5, 0.2);
+    background-color: rgb(160, 182, 167);
+}
+
+.btn, .btn-digit {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 35px;
+    height: 25px;
+    margin: 3px;
+    padding: 0;
+    background: linear-gradient(180deg, rgb(143, 167, 184),rgb(83, 100, 119));
+    border-radius: 8px;
+    border: 1px none rgb(52, 57, 80);
+    box-shadow: 0px 0px 3px black;
+}
+
+.btn:active, .btn-digit:active {
+    background: linear-gradient(0deg, rgb(143, 167, 184),rgb(83, 100, 119));
+    outline: none;
+}
+
+#btn-C, #btn-CE {
+    background: linear-gradient(180deg, rgb(184, 143, 143),rgb(119, 83, 83));
+    border: 1px none rgb(80, 52, 52);
+}
+
+#btn-C:active, #btn-CE:active {
+    background: linear-gradient(0deg, rgb(184, 143, 143),rgb(119, 83, 83));
+    border: 1px none rgb(80, 52, 52);
+}
+
+/* background: radial-gradient(rgb(143, 167, 184),rgb(83, 100, 119)); */
