@@ -17,6 +17,9 @@ $( function(){
         },
 
         concatDigit: function(btn){
+            if (this.operand === '='){
+                this.clearAll();
+            }
             if(this.operand != '=' && this.number.length < MAX_LENGTH){
                 let digit = $(btn).val();
                 this.number.push(digit);
